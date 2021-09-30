@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    padding: 20px 149.5px;
+    padding: 30px 149.5px;
 }
 
 /* Inio header --------------------------------------------------------- */
@@ -56,3 +56,10 @@ main {
         height: 400px;
         width: 20%;
     }
+
+/* Inizio footer ------------------------------------------------------- */
+footer {
+    margin-top: 10px;
+    height: 70px;
+    background-color: darkviolet;
+}
