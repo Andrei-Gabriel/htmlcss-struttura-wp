@@ -1,4 +1,4 @@
-/* Struttura base ------------------------------------------------------ */
+/* Struttura base -------------------------------------------------------- */
 * {
     margin: 0;
     padding: 0;
@@ -7,59 +7,53 @@
 body {
     padding: 30px 149.5px;
 }
+    body :only-of-type:not(header) {
+        margin-top: 10px;
+    }
 
-/* Inio header --------------------------------------------------------- */
+/* Layout header --------------------------------------------------------- */
 header {
     height: 100px;
     background-color: violet;
 }
 
-/* Inizio figure ------------------------------------------------------- */
+/* Layout figure --------------------------------------------------------- */
 figure {
-    margin-top: 10px;
     height: 400px;
     background-color: khaki;
 }
 
-/* Inizio main --------------------------------------------------------- */
+/* Layout main ----------------------------------------------------------- */
 main {
-    margin-top: 10px;
     height: 500px;
     background-color: blue;
 }
-    /*main::after {
-        content: "";
-        display: table;
-        clear: both;
-    }*/
+/*main::after {
+    content: "";
+    display: table;
+    clear: both;
+}*/
     main div {
         background-color: lightblue;
     }
-    .header-main {
-        height: 80px;
-    }
-    .sideleft-main {
+    main div:not(.header-main) {
+        height: 400px;
         float: left;
-        margin: 10px 0 10px 0;
-        width: 20%;
-        height: 400px;
     }
-    .main-main {
-        float: left;
-        margin: 10px 10px 10px 10px;
-        width: 610px;
-        height: 400px;
-    }
-    .sideright-main {
-        margin: 10px 0 10px 0;
-        float: right;
-        height: 400px;
-        width: 20%;
-    }
+        .header-main {
+            height: 80px;
+        }
+        [class*="t-main"] { /* lefT, righT */
+            margin: 10px 0;
+            width: 20%;
+        }
+        .main-main {
+            margin: 10px;
+            width: 610px;
+        }
 
-/* Inizio footer ------------------------------------------------------- */
+/* Layout footer --------------------------------------------------------- */
 footer {
-    margin-top: 10px;
     height: 70px;
     background-color: darkviolet;
 }
