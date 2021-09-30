@@ -1,23 +1,58 @@
+/* Struttura base ------------------------------------------------------ */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 body {
-    padding: 20px 150px;
+    padding: 20px 149.5px;
 }
 
 /* Inio header --------------------------------------------------------- */
 header {
-    width: 100%;
-    height: 50px;
+    height: 100px;
     background-color: violet;
 }
 
 /* Inizio figure ------------------------------------------------------- */
 figure {
     margin-top: 10px;
-    width: 100%;
-    height: 200px;
+    height: 400px;
     background-color: khaki;
 }
+
+/* Inizio main --------------------------------------------------------- */
+main {
+    margin-top: 10px;
+    height: 500px;
+    background-color: blue;
+}
+    /*main::after {
+        content: "";
+        display: table;
+        clear: both;
+    }*/
+    main div {
+        background-color: lightblue;
+    }
+    .header-main {
+        height: 80px;
+    }
+    .sideleft-main {
+        float: left;
+        margin: 10px 0 10px 0;
+        width: 20%;
+        height: 400px;
+    }
+    .main-main {
+        float: left;
+        margin: 10px 10px 10px 10px;
+        width: 610px;
+        height: 400px;
+    }
+    .sideright-main {
+        margin: 10px 0 10px 0;
+        float: right;
+        height: 400px;
+        width: 20%;
+    }
