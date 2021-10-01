@@ -11,6 +11,12 @@ body {
         margin-top: 10px;
     }
 
+.clearfix::after { /* main */
+    content: "";
+    display: table;
+    clear: both;
+}
+
 /* Layout header --------------------------------------------------------- */
 header {
     height: 100px;
@@ -25,14 +31,8 @@ figure {
 
 /* Layout main ----------------------------------------------------------- */
 main {
-    height: 500px;
     background-color: blue;
 }
-/*main::after {
-    content: "";
-    display: table;
-    clear: both;
-}*/
     main div {
         background-color: lightblue;
     }
